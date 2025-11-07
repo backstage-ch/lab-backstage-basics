@@ -8,7 +8,7 @@ metadata:
 spec:
   owner: infrastructure
   type: service
-parameters:
+  parameters:
     - title: Fill in some steps
       required:
         - name
@@ -68,4 +68,5 @@ steps:
         gitAuthorEmail: ${{ user.entity.spec.profile.email }}
         repoUrl: ${{ parameters.repoUrl }}
         description: ${{ parameters.description }}
+
         token: ${{ secrets.USER_OAUTH_TOKEN }}
